@@ -7,7 +7,7 @@ Expose the service to the internet
 Interact with the model using HTTP requests
 The project includes step-by-step instructions for deployment and usage, making it easy to run your own LLM service on Kubernetes infrastructure.
 
-# Have a k8s cluster ready - it should probably have 8vCPU, 16GB RAM, 100GB Disk.
+Have a k8s cluster ready - it should probably have 8vCPU, 16GB RAM, 100GB Disk.
 
 # Deploy the service
 kubectl apply -f deployment.yaml
