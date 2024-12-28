@@ -16,13 +16,30 @@ kubectl apply -f deployment.yaml
 kubectl get service llama-service --output=jsonpath='{.status.loadBalancer.ingress[0].ip}:{.spec.ports[0].port}'
 
 # Make a curl call to the service
-curl http://EXTERNAL_IP:80/api/generate -H "Content-Type: application/json" -d '{
-  "model": "llama2",
-  "prompt": "Why is the sky blue?"                  
-}'
+curl http://EXTERNAL_IP:80/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama2",
+    "prompt": "Why is the sky blue?"
+  }'
 
 # Sample response
-{"model":"llama2","created_at":"2024-12-28T09:47:34.049121327Z","response":"The","done":false}
-{"model":"llama2","created_at":"2024-12-28T09:47:35.894942437Z","response":" sky","done":false}
-{"model":"llama2","created_at":"2024-12-28T09:47:37.733627698Z","response":" appears","done":false}
+{
+  "model":"llama2",
+  "created_at":"2024-12-28T09:47:34.049121327Z",
+  "response":"The",
+  "done":false
+}
+{
+  "model":"llama2",
+  "created_at":"2024-12-28T09:47:35.894942437Z",
+  "response":" sky",
+  "done":false
+}
+{
+  "model":"llama2",
+  "created_at":"2024-12-28T09:47:37.733627698Z",
+  "response":" appears",
+  "done":false
+}
 ...
