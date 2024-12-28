@@ -25,21 +25,21 @@ curl http://EXTERNAL_IP:80/api/generate \
 
 # Sample response
 {
-  "model":"llama2",
-  "created_at":"2024-12-28T09:47:34.049121327Z",
-  "response":"The",
-  "done":false
+  "model": "llama2",
+  "created_at": "2024-12-28T09:47:34.049121327Z",
+  "response": "The",
+  "done": false
 }
 {
-  "model":"llama2",
-  "created_at":"2024-12-28T09:47:35.894942437Z",
-  "response":" sky",
-  "done":false
+  "model": "llama2",
+  "created_at": "2024-12-28T09:47:35.894942437Z",
+  "response": " sky",
+  "done": false
 }
 {
-  "model":"llama2",
-  "created_at":"2024-12-28T09:47:37.733627698Z",
-  "response":" appears",
-  "done":false
+  "model": "llama2",
+  "created_at": "2024-12-28T09:47:37.733627698Z",
+  "response": " appears",
+  "done": false
 }
 ...
