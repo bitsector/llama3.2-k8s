@@ -30,12 +30,14 @@ curl http://EXTERNAL_IP:80/api/generate \
   "response": "The",
   "done": false
 }
+
 {
   "model": "llama2",
   "created_at": "2024-12-28T09:47:35.894942437Z",
   "response": " sky",
   "done": false
 }
+
 {
   "model": "llama2",
   "created_at": "2024-12-28T09:47:37.733627698Z",
